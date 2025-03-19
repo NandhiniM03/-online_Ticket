@@ -1,0 +1,76 @@
+/* Basic body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Light gray background for the body */
+}
+
+/* Navbar container */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50; /* Dark blue-grey background */
+  padding: 15px;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+}
+
+/* Navbar list items */
+nav ul li {
+  margin: 0 20px; /* Increased spacing for better readability */
+}
+
+/* Navbar links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Uppercase letters for a bold look */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+  color: #e74c3c; /* Bright red color on hover */
+  text-decoration: underline; /* Underline text on hover */
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+/* Container styling for main content */
+div {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Additional content styling */
+h1 {
+  color: #333; /* Dark grey color for heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555; /* Slightly lighter grey text for paragraphs */
+  line-height: 1.6;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack navbar items vertically */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Reduced margin for vertical layout */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Slightly smaller font for mobile */
+  }
+}

@@ -1,0 +1,40 @@
+/* Seating.css */
+.seating-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.seating-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0f4c75;
+  margin-bottom: 15px;
+}
+
+.seats-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.seat {
+  background-color: #3282b8;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.seat.selected {
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+.seat:hover {
+  background-color: #1b6ca8;
+}

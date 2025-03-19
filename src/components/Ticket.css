@@ -1,0 +1,54 @@
+.ticket {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.ticket-heading {
+  font-size: 28px;
+  color: #dc3545;
+}
+
+.ticket-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-textarea {
+  height: 100px;
+}
+
+.form-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.ticket-list {
+  margin-top: 20px;
+}
+
+.ticket-card {
+  background: #f8d7da;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: left;
+}

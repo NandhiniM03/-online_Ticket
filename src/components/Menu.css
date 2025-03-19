@@ -1,0 +1,93 @@
+/* Menu.css */
+.menu {
+  font-family: "Arial", sans-serif;
+  background-color: #0a0a0a; /* Deep black for a cinematic feel */
+  color: #e0e0e0;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 15px rgba(255, 204, 0, 0.8);
+  animation: neonGlow 1.5s infinite alternate;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #c5c5c5;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  font-size: 1.3rem;
+  padding: 15px;
+  background: rgba(30, 30, 30, 0.8);
+  margin: 10px 0;
+  border-radius: 8px;
+  color: #ffcc00;
+  text-shadow: 1px 1px 10px rgba(255, 204, 0, 0.6);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.listItem:hover {
+  transform: scale(1.05);
+  background: rgba(50, 50, 50, 0.9);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+/* Neon glow animation */
+@keyframes neonGlow {
+  from {
+    text-shadow: 2px 2px 15px rgba(255, 204, 0, 0.8);
+  }
+  to {
+    text-shadow: 2px 2px 25px rgba(255, 204, 0, 1);
+  }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 30px 15px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .listItem {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}
